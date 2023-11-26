@@ -1,6 +1,7 @@
 var pickedDigit;
 var outputBorder = document.getElementById("output");
 var showRightAns;
+
 function startGame() {
   function getRandomNum() {
     let min = 1001;
@@ -69,6 +70,7 @@ function startGame() {
   return pickedDigit;
 }
 
+// ============================== CHECK USER ANSWER ==============================
 var correctAns = 0;
 var wrongAns = 0;
 var userInput = 0;
