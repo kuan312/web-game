@@ -1,6 +1,6 @@
 # Guess The Digit 🎲 
-### solve the math trick and find the hidden number 🧐
-### разгадай математический фокус и найди скрытую цифру 🧐
+### solve the math trick and find the hidden number 🔮
+### разгадай математический фокус и найди скрытую цифру 🔮
 ## 🕹️[Play / Играть](https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/)
 
 
@@ -9,7 +9,7 @@
 
 https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/
 
-## 🕹️ How to play?
+## 📋 How to play?
 
     1. The algorithm thinks of a number, but does not directly tell you it
     2. For example: 8765. Then it rearranges its digits: 5687
@@ -18,7 +18,7 @@ https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/
     5. To guess it, add up all the remaining digits. 0+7+8=15
     6. Subtract 15 from the nearest multiple of 9. 18-15=3. That is the answer!
 
-## 🕹️ Как играть?
+## 📋 Как играть?
 
     1. Алгоритм задумывает число, но не сообщает его Вам напрямую 
     2. Например: 8765. Затем переставляет его цифры: 5687
@@ -28,10 +28,10 @@ https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/
     6. Вычтите 15 из ближайшего числа, кратного 9. 18-15=3. Это и есть ответ!
 
 ----------------------------------------------------------------------------
-    ✧˖° Math formula was taken from the book "Live mathematics" author Yakov Isidorovich Perelman
-    ✧˖° Математическая формула взята из книги "Живая математика" автор Яков Исидорович Перельман
+    💡 Math formula was taken from the book "Live mathematics" author Yakov Isidorovich Perelman
+    💡 Математическая формула взята из книги "Живая математика" автор Яков Исидорович Перельман
 
-## Author
+## 👨🏻‍💼 Author
 - [@kuanJoy](https://www.github.com/kuanJoy)
 
 
