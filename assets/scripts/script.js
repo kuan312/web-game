@@ -113,8 +113,8 @@ document.getElementById("userInput").addEventListener("input", function () {
 });
 
 
-// ============================== FINISH GAME ==============================
-function toggleGame() {
+// ============================== FINISH GAME RUSSIAN ==============================
+function toggleGameRus() {
   correctAns = 0;
   wrongAns = 0;
   document.getElementById("ans-wrong").textContent = wrongAns;
@@ -124,6 +124,20 @@ function toggleGame() {
     toggler.innerHTML = "Начать игру";
   } else {
     toggler.innerHTML = "Завершить игру";
+  }
+}
+
+// ============================== FINISH GAME ENGLISH ==============================
+function toggleGame() {
+  correctAns = 0;
+  wrongAns = 0;
+  document.getElementById("ans-wrong").textContent = wrongAns;
+  document.getElementById("ans-correct").textContent = correctAns;
+  var toggler = document.getElementById("finishButton");
+  if (toggler.innerHTML === "Stop") {
+    toggler.innerHTML = "Start";
+  } else {
+    toggler.innerHTML = "Stop";
   }
 }
 
