@@ -1,11 +1,11 @@
 # Guess The Digit 🎲
-it is a simple math game in which the user have to find the missing digit using the hints
------------------------------------------------------------------------------------------
-это математическая игра, в которой  нужно найти недостающую цифру, используя подсказки
+### it is a simple math game in which the user have to find the missing digit using the hints 🧐
+
+### это математическая игра, в которой  нужно найти недостающую цифру, используя подсказки 🧐
 
 ![2023-11-26 16-04-21](https://github.com/kuanJoy/guess-the-digit/assets/121744592/1e6b2442-1ce0-4ecc-8803-0adc4cf320e6)
 
-## How to play?
+## 🕹️ How to play?
 
     1. The algorithm thinks of a number, but does not directly tell you it
     2. For example: 8765. Then it rearranges its digits: 5687
@@ -14,7 +14,7 @@ it is a simple math game in which the user have to find the missing digit using 
     5. To guess it, add up all the remaining digits. 0+7+8=15
     6. Subtract 15 from the nearest multiple of 9. 18-15=3. That is the answer!
 
-## Как играть?
+## 🕹️ Как играть?
 
     1. Алгоритм задумывает число, но не сообщает его Вам напрямую 
     2. Например: 8765. Затем переставляет его цифры: 5687
@@ -23,9 +23,9 @@ it is a simple math game in which the user have to find the missing digit using 
     5. Чтобы отгадать, сложите все оставшиеся цифры. 0+7+8=15
     6. Вычтите 15 из ближайшего числа, кратного 9. 18-15=3. Это и есть ответ!
 
-    Inspired by the book "Live mathematics" author Yakov Isidorovich Perelman
 ----------------------------------------------------------------------------
-    Был вдохновлен книгой "Живая математика" автор Яков Исидорович Перельман
+    ✧˖° Inspired by the book "Live mathematics" author Yakov Isidorovich Perelman
+    ✧˖° Был вдохновлен книгой "Живая математика" автор Яков Исидорович Перельман
 
 ## Author
 - [@kuanJoy](https://www.github.com/kuanJoy)
