@@ -111,3 +111,37 @@ btn.addEventListener("click", () => {
 document.getElementById("userInput").addEventListener("input", function () {
   this.value = this.value.slice(0, 1);
 });
+
+
+// ============================== THEME SWITCHER ==============================
+
+var switchBtn = document.querySelector(".switch");
+var theme = document.querySelector(".body");
+var darkTheme = localStorage.getItem("dark-theme");
+var sunIcon = document.querySelector(".sun");
+var moon = document.querySelector(".moon")
+
+const enableDark = () => {
+  theme.classList.add("dark-theme");
+  localStorage.setItem("dark-theme", "enabled");
+};
+
+const disableDark = () => {
+  theme.classList.remove("dark-theme");
+  localStorage.setItem("dark-theme", "disabled");
+};
+
+if (darkTheme === "enabled") {
+  enableDark();
+}
+
+switchBtn.addEventListener("click", () => {
+  darkTheme = localStorage.getItem("dark-theme");
+  if (darkTheme === "disabled") {
+    enableDark();
+  } else {
+    disableDark();
+  }
+});
+
+
