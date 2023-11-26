@@ -151,7 +151,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
- }
+    user-select: none;
+}
 
 .slider-btn {
     cursor: pointer;
