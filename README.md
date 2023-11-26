@@ -3,6 +3,8 @@ it is a simple math game in which the user have to find the missing digit using 
 -----------------------------------------------------------------------------------------
 это математическая игра, в которой  нужно найти недостающую цифру, используя подсказки
 
+![2023-11-26 16-04-21](https://github.com/kuanJoy/guess-the-digit/assets/121744592/1e6b2442-1ce0-4ecc-8803-0adc4cf320e6)
+
 ## How to play?
 
     1. The algorithm thinks of a number, but does not directly tell you it
@@ -10,7 +12,7 @@ it is a simple math game in which the user have to find the missing digit using 
     3. It subtracts 5687 from the number 8765, resulting in: 3078
     4. It removes any digit and outputs the result: ?078
     5. To guess it, add up all the remaining digits. 0+7+8=15
-    6. Subtract 15 from the nearest multiple of 9. 18-15=3That is the answer!
+    6. Subtract 15 from the nearest multiple of 9. 18-15=3. That is the answer!
 
 ## Как играть?
 
@@ -20,6 +22,12 @@ it is a simple math game in which the user have to find the missing digit using 
     4. Зачеркивает любую цифру и выводит результат: ?078
     5. Чтобы отгадать, сложите все оставшиеся цифры. 0+7+8=15
     6. Вычтите 15 из ближайшего числа, кратного 9. 18-15=3. Это и есть ответ!
+
+*Inspired by the book "Live mathematics" author Yakov Isidorovich Perelman
+*Был вдохновлен книгой "Живая математика" автор Яков Исидорович Перельман
+
+## Author
+- [@kuanJoy](https://www.github.com/kuanJoy)
 
 
 
