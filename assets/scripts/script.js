@@ -192,3 +192,39 @@ function showCard() {
   sliderCard.classList.toggle("slider-card-active");
   cardContent.classList.toggle("card-content-active");
 }
+
+
+
+// ============================== SLIDER IN ENGLISH ==============================
+const slideContent = [
+  "The algorithm thinks of a number, but does not directly tell you it",
+  "For example: 8765. Then it rearranges its digits: 5687",
+  "It subtracts 5687 from the number 8765, resulting in: 3078",
+  "It removes any digit and outputs the result: ?078",
+  "To guess it, add up all the remaining digits. 0+7+8=15",
+  "Subtract 15 from the nearest multiple of 9. 18-15=3. That is the answer!",
+];
+
+var currentPage = 0;
+
+function showSlide(page) {
+  var sliderCard = document.getElementById("sliderCard");
+  sliderCard.innerHTML = `${slideContent[page]}`;
+}
+
+function nextSlide() {
+  currentPage = (currentPage + 1) % slideContent.length;
+  showSlide(currentPage);
+}
+
+function prevSlide() {
+  currentPage = (currentPage - 1 + slideContent.length) % slideContent.length;
+  showSlide(currentPage);
+}
+
+function showCard() {
+  var cardContent = document.querySelector(".card-content");
+  var sliderCard = document.querySelector(".slider-card");
+  sliderCard.classList.toggle("slider-card-active");
+  cardContent.classList.toggle("card-content-active");
+}
