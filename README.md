@@ -1,7 +1,6 @@
 # Guess The Digit 🎲 
-### it is a simple math game in which the user have to find the missing digit using the hints 🧐
-
-### это математическая игра, в которой  нужно найти недостающую цифру, используя подсказки 🧐
+### solve the math trick and find the hidden number 🧐
+### разгадай математический фокус и найди скрытую цифру 🧐
 ## 🕹️[Play / Играть](https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/)
 
 
