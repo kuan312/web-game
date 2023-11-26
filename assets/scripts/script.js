@@ -113,8 +113,21 @@ document.getElementById("userInput").addEventListener("input", function () {
 });
 
 
-// ============================== THEME SWITCHER ==============================
+// ============================== FINISH GAME ==============================
+function toggleGame() {
+  correctAns = 0;
+  wrongAns = 0;
+  document.getElementById("ans-wrong").textContent = wrongAns;
+  document.getElementById("ans-correct").textContent = correctAns;
+  var toggler = document.getElementById("finishButton");
+  if (toggler.innerHTML === "Завершить игру") {
+    toggler.innerHTML = "Начать игру";
+  } else {
+    toggler.innerHTML = "Завершить игру";
+  }
+}
 
+// ============================== THEME SWITCHER ==============================
 var switchBtn = document.querySelector(".switch");
 var theme = document.querySelector(".body");
 var darkTheme = localStorage.getItem("dark-theme");
@@ -143,5 +156,8 @@ switchBtn.addEventListener("click", () => {
     disableDark();
   }
 });
+
+
+// ============================== THEME SWITCHER ==============================
 
 
