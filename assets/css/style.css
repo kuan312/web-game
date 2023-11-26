@@ -1,0 +1,381 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../fonts/Comfortaa-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../fonts/Comfortaa-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url(../fonts/Nunito-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url(../fonts/Nunito-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url(../fonts/PlusJakartaSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url(../fonts/PlusJakartaSans-Medium.ttf);
+    font-weight: 500;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+:root {
+    --input-background: #fff;
+    --wrapper-bg: #eef1f5;
+    --input-border: #CDD9ED;
+    --light-blue: #4177FE;
+    --dark-blue: #325ac2;
+    --dark-grey: #1d1d1d;
+    --white: #fff;
+    --light-grey-btn:#EEF3FF;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --btn-color: #fff;
+    --switcher-sun: #fff;
+    --switcher-moon: #4177FE;
+}
+body {
+    background-color: var(--wrapper-bg);
+    transition: 0.6s all;
+}
+.dark-theme {
+    --wrapper-bg: #212025;
+    --input-background: #484650; 
+    --input-border:#1b1a19a6;
+    --light-blue: #FFB019;
+    --dark-blue: #926510;
+    --dark-grey: #F1EFE7;  /* текст */
+    --white: #3e3c45;
+    --light-grey-btn: #35353c;
+    --shadow: rgba(103, 103, 103, 0.1);
+    --btn-color: #212025;
+    --switcher-sun: #FFB019;
+    --switcher-moon: #212025;
+}
+.wrapper {
+    font-family: "Nunito", "Comfortaa",sans-serif;
+    color: var(--dark-grey);
+    fill: var(--dark-grey)
+}
+
+.container {
+    max-width: 36rem;
+    margin: 0 auto;
+}
+.up-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.up-header__language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--dark-grey);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
+    fill: var(--dark-grey);
+}
+.header {
+    display: flex;
+    padding: 2rem 0rem 4rem 0rem;
+    justify-content: center;
+    align-items: center;
+}
+.game-title-desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 153px;
+    width: 420px;
+    justify-content: center;
+    text-align: center;
+}
+.game-title {
+    font-size: clamp(1.5rem, 1.159rem + 1.36vw, 2.25rem);
+    font-weight: 500;
+    font-family: "Comfortaa";
+    word-spacing: 0.4rem;
+    letter-spacing: 0.1rem;
+}
+.game-desc {
+    margin-top: 0.7rem;
+    font-size: clamp(1rem, 0.773rem + 0.91vw, 1.5rem);
+    line-height: 2.33rem;
+}
+
+.slider {
+    max-width: 274px;
+    min-height: 7.2375rem;
+}
+.slider-card {
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    border-radius: 0.75rem;
+    box-shadow: 0px 0px 10px var(--shadow);
+    cursor: pointer;
+}
+.slider-card-active {
+    display: flex;
+    background-color: var(--white);
+    border: 1px solid var(--input-border);
+}
+.card-content {
+    display: none;
+    overflow: hidden;
+}
+.card-content-active {
+    display: flex;
+}
+.slider-card p {
+    font-size: clamp(0.7rem, 0.773rem + 0.91vw, 1rem);
+    margin: 0;
+    padding: .625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+.slider-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+    min-width: 12%;
+    height: 100%;
+    transition: 0.3s all;
+    background-color: var(--light-grey-btn);
+    padding: 2.4rem 0.2rem;
+    border-radius: 0.75rem 0rem 0rem 0.75rem;
+    border-right: 1px solid var(--input-border);
+}
+.slider-btn svg {
+    top: 50%;
+}
+.right-btn {
+    border-radius: 0rem 0.75rem 0.75rem 0rem;
+    border-left: 1px solid var(--input-border);
+    border-right: none;
+}
+.slider-btn:hover {
+    fill: var(--light-blue);
+}
+.game-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.left-block {
+    display: flex;
+    flex-direction: column;
+}
+.game-start {
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: "Nunito";
+}
+.btn-back {
+    background: var(--dark-blue);
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    outline-offset: 4px;
+    font-weight: 600;
+    min-width: 274px;
+    margin-bottom: 2rem;
+    
+  }
+  .btn-front {
+    display: block;
+    padding: .75rem 2rem;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: var(--light-blue);
+    color: var(--btn-color);
+    transform: translateY(-4px);
+    transition: 0.1s all;
+  }
+  .btn-back:active .btn-front {
+    transform: translateY(-1px);
+  }
+
+
+.game-window {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    margin-bottom: 6rem;
+    max-width: 274px;
+    font-family: "Plus Jakarta Sans";
+    gap: 1.5rem;
+}
+.is-active {
+    display: flex;
+}
+.game {
+    width: 206.51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.output {
+    border: 1px solid var(--input-border);
+    background-color: var(--input-background);
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: 4px;
+    height: 3.5325rem;
+    transition: 0.3s all ease-out;
+    box-shadow: 0px 0px 10px var(0, 0, 0, 0.1);
+}
+.correct-ans {
+    border: 1px solid green;
+}
+.wrong-ans {
+    border: 1px solid red;
+}
+.casual-ans {
+    border: 1px solid var(--input-border);
+}
+.answer-form {
+    display: flex;
+    align-items: center;
+    border-radius: 0rem 0rem 0.75rem 0.75rem;
+    background-color: var(--light-grey-btn);
+    border: 1px solid var(--input-border);
+    color: var(--dark-grey);
+    width: 100%;
+    border-top: none;
+    box-shadow: 0px 0px 10px var(--shadow);
+
+}
+.label-icon {
+    min-width: 40px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s all;
+}
+.label-icon:hover {
+    fill: var(--light-blue);
+}
+.digit-icon {
+    fill: var(--dark-grey);
+}
+.answer__input {
+    min-height: 55px;
+    width: 55px;
+    text-align: center;
+    font-size: 1.7rem;
+    border: 1px solid var(--input-border);
+    border-bottom: none;
+    border-top: none;
+    background: var(--white);
+}
+.btn-check {
+    text-align: center;
+    min-width: 110px;
+    font-weight: bold;
+    transition: 0.3s all;
+    font-family: "Nunito";
+}
+.btn-check:hover {
+    color: var(--light-blue);
+}
+.answer__input:focus {
+    border: 1px solid;
+    border-color: var(--light-blue);
+    z-index: 9999;
+}
+.answer-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-width: 2.5rem;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+}
+.counter-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+}
+.correct {
+    fill: green;
+}
+.wrong {
+    fill: red;
+}
+
+@media screen and (max-width: 67.5rem) {
+    .game-desc {
+        width: 70%;
+    }
+    .game-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .game-window {
+        margin-bottom: 1rem;
+    }
+    .slider {
+        margin-bottom: 4rem;
+    }
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 1.4rem;
+    border-radius: 2rem;
+    background-color: var(--light-blue);
+    transition: 0.6s all;
+}
+
+.sun {
+    height: 1rem;
+    position: relative;
+    left: -0.3rem;
+    fill: var(--switcher-sun);
+    transition: ease-in-out;
+}
+
+.moon {
+    height: 1rem;
+    position: relative;
+    left: 0.3rem;
+    transition: ease-in-out;
+    fill: var(--switcher-moon);
+}
