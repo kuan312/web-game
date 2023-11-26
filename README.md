@@ -24,6 +24,7 @@ it is a simple math game in which the user have to find the missing digit using 
     6. Вычтите 15 из ближайшего числа, кратного 9. 18-15=3. Это и есть ответ!
 
 *Inspired by the book "Live mathematics" author Yakov Isidorovich Perelman
+----------------------------------------------------------------------------
 *Был вдохновлен книгой "Живая математика" автор Яков Исидорович Перельман
 
 ## Author
