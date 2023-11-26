@@ -158,6 +158,37 @@ switchBtn.addEventListener("click", () => {
 });
 
 
-// ============================== THEME SWITCHER ==============================
+// ============================== SLIDER IN RUSSIAN ==============================
 
+const sliderContentRus = [
+  "Алгоритм задумывает число, но не сообщает его Вам напрямую ",
+  "Например: 8765. Затем переставляет его цифры: 5687",
+  "Из числа 8765 вычитает 5687, получает: 3078",
+  "Зачеркивает любую цифру и выводит результат: ?078",
+  "Чтобы отгадать, сложите все оставшиеся цифры. 0+7+8=15",
+  "Вычтите 15 из ближайшего числа, кратного 9. 18-15=3. Это и есть ответ!",
+];
 
+var currentPage = 0;
+
+function showSlideRus(page) {
+  var sliderCard = document.getElementById("sliderCard");
+  sliderCard.innerHTML = `${sliderContentRus[page]}`;
+}
+
+function nextSlideRus() {
+  currentPage = (currentPage + 1) % sliderContentRus.length;
+  showSlideRus(currentPage);
+}
+
+function prevSlideRus() {
+  currentPage = (currentPage - 1 + sliderContentRus.length) % sliderContentRus.length;
+  showSlideRus(currentPage);
+}
+
+function showCard() {
+  var cardContent = document.querySelector(".card-content");
+  var sliderCard = document.querySelector(".slider-card");
+  sliderCard.classList.toggle("slider-card-active");
+  cardContent.classList.toggle("card-content-active");
+}
