@@ -2,7 +2,9 @@
 ### it is a simple math game in which the user have to find the missing digit using the hints 🧐
 
 ### это математическая игра, в которой  нужно найти недостающую цифру, используя подсказки 🧐
-## [🎮 Start to play / Начать игру](https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/)
+## Play / Играть
+- [🎮 Start to play / Начать игру](https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/)
+
 ![2023-11-26 16-04-21](https://github.com/kuanJoy/guess-the-digit/assets/121744592/1e6b2442-1ce0-4ecc-8803-0adc4cf320e6)
 
 https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/
@@ -26,8 +28,8 @@ https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/
     6. Вычтите 15 из ближайшего числа, кратного 9. 18-15=3. Это и есть ответ!
 
 ----------------------------------------------------------------------------
-    ✧˖° Inspired by the book "Live mathematics" author Yakov Isidorovich Perelman
-    ✧˖° Был вдохновлен книгой "Живая математика" автор Яков Исидорович Перельман
+    ✧˖° Math formula was taken from the book "Live mathematics" author Yakov Isidorovich Perelman
+    ✧˖° Математическая формула взята из книги "Живая математика" автор Яков Исидорович Перельман
 
 ## Author
 - [@kuanJoy](https://www.github.com/kuanJoy)
