@@ -77,6 +77,9 @@ var userInput = 0;
 
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
+  if (!userInput) {
+    console.log("Введите цифру / Input the guess!");
+  }
   if (pickedDigit == userInput) {
     correctAns++;
     document.getElementById("ans-correct").textContent = correctAns;
@@ -85,7 +88,7 @@ function checkUserAnswer() {
     setTimeout(function () {
       outputBorder.classList.remove("correct-ans");
     }, 1000);
-  } else {
+  } else if (userInput >= 0) {
     wrongAns++;
     document.getElementById("ans-wrong").textContent = wrongAns;
     outputBorder.classList.remove("correct-ans");
