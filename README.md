@@ -7,7 +7,6 @@
 
 ![2023-11-26 16-04-21](https://github.com/kuanJoy/guess-the-digit/assets/121744592/1e6b2442-1ce0-4ecc-8803-0adc4cf320e6)
 
-https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/
 
 ## 📋 How to play?
 
