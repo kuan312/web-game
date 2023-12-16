@@ -1,7 +1,7 @@
 # Guess The Digit 🎲 
 ### solve the math trick and find the hidden number 🔮
 ### разгадай математический фокус и найди скрытую цифру 🔮
-## 🕹️[Play / Играть](https://656324392668305a942cf14c--majestic-valkyrie-047d0f.netlify.app/)
+## 🕹️[Play / Играть](https://majestic-valkyrie-047d0f.netlify.app/)
 
 
 
