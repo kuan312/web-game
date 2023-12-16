@@ -6,7 +6,7 @@ function startGame() {
   function getRandomNum() {
     let min = 1001;
     let max = 99999;
-    let result = Math.floor(Math.random() * (max - min + 1) + min); 
+    let result = Math.floor(Math.random() * (max - min + 1) + min);
     // console.log(`Step 1 - Generate random number: ${result} `);
     return result;
   }
@@ -78,7 +78,7 @@ var userInput = 0;
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
   if (!userInput) {
-    console.log("Введите цифру / Input the guess!");
+    alert("Введите цифру / Input the guess!");
   }
   if (pickedDigit == userInput) {
     correctAns++;
@@ -88,6 +88,8 @@ function checkUserAnswer() {
     setTimeout(function () {
       outputBorder.classList.remove("correct-ans");
     }, 1000);
+    setTimeout(startGame, 1000);
+
   } else if (userInput >= 0) {
     wrongAns++;
     document.getElementById("ans-wrong").textContent = wrongAns;
@@ -96,13 +98,13 @@ function checkUserAnswer() {
     setTimeout(function () {
       outputBorder.classList.remove("wrong-ans");
     }, 1000);
+    setTimeout(startGame, 1000);
   }
   setTimeout(function () {
     var outputRightAnswer = document.getElementById("output");
     outputRightAnswer.innerHTML = showRightAns;
     // console.log(showRightAns);
   });
-  setTimeout(startGame, 1000);
 }
 
 var btn = document.querySelector(".btn-front");
