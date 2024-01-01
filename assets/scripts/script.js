@@ -70,6 +70,7 @@ function startGame() {
   return pickedDigit;
 }
 
+
 // ============================== CHECK USER ANSWER ==============================
 var correctAns = 0;
 var wrongAns = 0;
@@ -77,11 +78,13 @@ var userInput = 0;
 
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
-  if (!userInput) {
-    alert("Введите цифру / Input the guess!");
-  }
   if (pickedDigit == userInput) {
     correctAns++;
+    setTimeout(function () {
+      var outputRightAnswer = document.getElementById("output");
+      outputRightAnswer.innerHTML = showRightAns;
+      // console.log(showRightAns);
+    });
     document.getElementById("ans-correct").textContent = correctAns;
     outputBorder.classList.remove("wrong-ans");
     outputBorder.classList.add("correct-ans");
@@ -89,9 +92,13 @@ function checkUserAnswer() {
       outputBorder.classList.remove("correct-ans");
     }, 1000);
     setTimeout(startGame, 1000);
-
   } else if (userInput >= 0) {
     wrongAns++;
+    setTimeout(function () {
+      var outputRightAnswer = document.getElementById("output");
+      outputRightAnswer.innerHTML = showRightAns;
+      // console.log(showRightAns);
+    });
     document.getElementById("ans-wrong").textContent = wrongAns;
     outputBorder.classList.remove("correct-ans");
     outputBorder.classList.add("wrong-ans");
@@ -99,12 +106,10 @@ function checkUserAnswer() {
       outputBorder.classList.remove("wrong-ans");
     }, 1000);
     setTimeout(startGame, 1000);
+  } else {
+    alert("Введите цифру / Enter the number!");
   }
-  setTimeout(function () {
-    var outputRightAnswer = document.getElementById("output");
-    outputRightAnswer.innerHTML = showRightAns;
-    // console.log(showRightAns);
-  });
+
 }
 
 var btn = document.querySelector(".btn-front");
