@@ -13,8 +13,8 @@
 <body class="body">
   <div class="wrapper">
     <?php
-    include "./layout/eng/game-head-eng.php";
-    include "./layout/eng/game-content-eng.php";
+    include "./include/eng/game-head-eng.php";
+    include "./include/eng/game-content-eng.php";
     ?>
   </div>
   <script src="./assets/scripts/script.js"></script>
