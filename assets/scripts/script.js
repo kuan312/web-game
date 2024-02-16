@@ -70,11 +70,10 @@ function startGame() {
   return pickedDigit;
 }
 
-
 // ============================== CHECK USER ANSWER ==============================
 var correctAns = 0;
 var wrongAns = 0;
-var userInput = 0;
+var userInput;
 
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
@@ -90,8 +89,11 @@ function checkUserAnswer() {
     outputBorder.classList.add("correct-ans");
     setTimeout(function () {
       outputBorder.classList.remove("correct-ans");
-    }, 1000);
-    setTimeout(startGame, 1000);
+    }, 1500);
+    blockBtnCheck();
+    setTimeout(startGame, 1500);
+    setTimeout(clearInput, 1500);
+
   } else if (userInput >= 0) {
     wrongAns++;
     setTimeout(function () {
@@ -104,8 +106,10 @@ function checkUserAnswer() {
     outputBorder.classList.add("wrong-ans");
     setTimeout(function () {
       outputBorder.classList.remove("wrong-ans");
-    }, 1000);
-    setTimeout(startGame, 1000);
+    }, 1500);
+    blockBtnCheck();
+    setTimeout(startGame, 1500);
+    setTimeout(clearInput, 1500);
   } else {
     alert("Введите цифру / Enter the number!");
   }
@@ -122,6 +126,20 @@ document.getElementById("userInput").addEventListener("input", function () {
   this.value = this.value.slice(0, 1);
 });
 
+// ============================== BLOCK CHECK FOR 1 S =======================
+function blockBtnCheck() {
+  var btnCheck = document.querySelector(".btn-check");
+  btnCheck.disabled = true;
+  setTimeout(function () { btnCheck.disabled = false; }, 1500)
+}
+
+// ============================== CLEAR INPUT =======================
+function clearInput() {
+  var clearInput = document.getElementById("userInput");
+  if (clearInput.value != "") {
+    clearInput.value = "";
+  }
+}
 
 // ============================== FINISH GAME RUSSIAN ==============================
 function toggleGameRus() {
