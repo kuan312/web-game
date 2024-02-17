@@ -333,8 +333,8 @@ body {
 }
 
 .answer__input {
-    min-height: 55px;
-    width: 55px;
+    min-height: 3.4375rem;
+    width: 3.4375rem;
     text-align: center;
     font-size: 1.7rem;
     border: 1px solid var(--input-border);
@@ -346,12 +346,13 @@ body {
 }
 
 .btn-check {
-    text-align: center;
-    min-width: 110px;
+    max-width: 10.3rem;
+    min-height: 3.4375rem;
     font-weight: bold;
     transition: 0.3s all;
     font-family: "Nunito";
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
 .btn-check:hover {
@@ -434,12 +435,16 @@ body {
     }
 
     .answer__input {
-        width: 30%;
+        width: 43%;
         min-width: 55px;
     }
 
     .label-icon {
         width: 42.5%;
+    }
+
+    .btn-check {
+        max-width: 100%;
     }
 }
 
