@@ -139,10 +139,8 @@ function clearInput() {
   var clearInput = document.getElementById("userInput");
   if (clearInput.value !== "") {
     clearInput.value = "";
-    var inputField = document.getElementById("userInput");
-    setTimeout(function () {
-      inputField.focus();
-    }, 200);
+    clearInput.focus();
+    clearInput.click();
   }
 }
 
