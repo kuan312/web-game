@@ -75,6 +75,11 @@ var correctAns = 0;
 var wrongAns = 0;
 var userInput;
 
+document.getElementById("btn-check").addEventListener("click", checkUserAnswer);
+document
+  .getElementById("btn-check")
+  .addEventListener("touchstart", checkUserAnswer);
+
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
 
