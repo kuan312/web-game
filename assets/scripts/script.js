@@ -93,7 +93,6 @@ function checkUserAnswer() {
     blockBtnCheck();
     setTimeout(startGame, 1500);
     setTimeout(clearInput, 1500);
-    document.getElementById("userInput").focus();
   } else if (userInput >= 0) {
     wrongAns++;
     setTimeout(function () {
@@ -139,6 +138,7 @@ function clearInput() {
   var clearInput = document.getElementById("userInput");
   if (clearInput.value != "") {
     clearInput.value = "";
+    clearInput.focus();
   }
 }
 
