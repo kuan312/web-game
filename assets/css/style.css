@@ -409,6 +409,7 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+
     .game-desc {
         margin: 0rem 1.5rem;
     }
@@ -422,7 +423,7 @@ body {
 
     .game-window {
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 5rem;
     }
 
     .game {
