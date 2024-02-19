@@ -75,10 +75,21 @@ var correctAns = 0;
 var wrongAns = 0;
 var userInput;
 
-document.getElementById("btn-check").addEventListener("click", checkUserAnswer);
-document
-  .getElementById("btn-check")
-  .addEventListener("touchstart", checkUserAnswer);
+function isMobile() {
+  const regex =
+    /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  return regex.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+  document
+    .getElementById("btn-check")
+    .addEventListener("touchstart", checkUserAnswer);
+} else {
+  document
+    .getElementById("btn-check")
+    .addEventListener("click", checkUserAnswer);
+}
 
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
@@ -88,7 +99,6 @@ function checkUserAnswer() {
     setTimeout(function () {
       var outputRightAnswer = document.getElementById("output");
       outputRightAnswer.innerHTML = showRightAns;
-      // console.log(showRightAns);
     });
     document.getElementById("ans-correct").textContent = correctAns;
     outputBorder.classList.remove("wrong-ans");
@@ -119,7 +129,7 @@ function checkUserAnswer() {
     alert("Введите цифру / Enter the number!");
   }
 }
-
+// ============================== TOGGLE GAME WINDOW ==============================
 var btn = document.querySelector(".btn-front");
 var gameWindow = document.querySelector(".game-window");
 btn.addEventListener("click", () => {
