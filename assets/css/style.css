@@ -409,8 +409,13 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+    .header {
+        padding: 0;
+    }
+
     .game-desc {
         margin: 0rem 1.5rem;
+        line-height: 1.5rem;
     }
 
     .left-block {
