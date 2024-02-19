@@ -84,7 +84,10 @@ function isMobile() {
 if (isMobile()) {
   document
     .getElementById("btn-check")
-    .addEventListener("touchstart", checkUserAnswer);
+    .addEventListener("touchstart", function (event) {
+      event.preventDefault();
+      checkUserAnswer();
+    });
 } else {
   document
     .getElementById("btn-check")
@@ -93,7 +96,6 @@ if (isMobile()) {
 
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
-  console.log(userInput);
   if (isNaN(userInput)) {
     alert("Введите цифру / Enter the number!");
     return;
