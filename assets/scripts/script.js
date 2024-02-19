@@ -93,7 +93,6 @@ function checkUserAnswer() {
     blockBtnCheck();
     setTimeout(startGame, 1500);
     setTimeout(clearInput, 1500);
-
   } else if (userInput >= 0) {
     wrongAns++;
     setTimeout(function () {
@@ -113,7 +112,7 @@ function checkUserAnswer() {
   } else {
     alert("Введите цифру / Enter the number!");
   }
-
+  document.getElementById("myInput").focus();
 }
 
 var btn = document.querySelector(".btn-front");
@@ -130,7 +129,9 @@ document.getElementById("userInput").addEventListener("input", function () {
 function blockBtnCheck() {
   var btnCheck = document.querySelector(".btn-check");
   btnCheck.disabled = true;
-  setTimeout(function () { btnCheck.disabled = false; }, 1500)
+  setTimeout(function () {
+    btnCheck.disabled = false;
+  }, 1500);
 }
 
 // ============================== CLEAR INPUT =======================
@@ -174,7 +175,7 @@ var switchBtn = document.querySelector(".switch");
 var theme = document.querySelector(".body");
 var darkTheme = localStorage.getItem("dark-theme");
 var sunIcon = document.querySelector(".sun");
-var moon = document.querySelector(".moon")
+var moon = document.querySelector(".moon");
 
 const enableDark = () => {
   theme.classList.add("dark-theme");
@@ -198,7 +199,6 @@ switchBtn.addEventListener("click", () => {
     disableDark();
   }
 });
-
 
 // ============================== SLIDER IN RUSSIAN ==============================
 
@@ -224,7 +224,8 @@ function nextSlideRus() {
 }
 
 function prevSlideRus() {
-  currentPage = (currentPage - 1 + sliderContentRus.length) % sliderContentRus.length;
+  currentPage =
+    (currentPage - 1 + sliderContentRus.length) % sliderContentRus.length;
   showSlideRus(currentPage);
 }
 
@@ -234,8 +235,6 @@ function showCard() {
   sliderCard.classList.toggle("slider-card-active");
   cardContent.classList.toggle("card-content-active");
 }
-
-
 
 // ============================== SLIDER IN ENGLISH ==============================
 const slideContent = [
