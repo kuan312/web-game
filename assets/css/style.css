@@ -428,6 +428,7 @@ body {
     .game-window {
         width: 100%;
         margin-bottom: 7rem;
+        margin-top: 3rem;
     }
 
     .game {
