@@ -78,10 +78,6 @@ var userInput;
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
 
-  vent.preventDefault();
-  var inputField = document.getElementById("myInput");
-  inputField.focus();
-
   if (pickedDigit == userInput) {
     correctAns++;
     setTimeout(function () {
