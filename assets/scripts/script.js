@@ -85,10 +85,12 @@ if (isMobile()) {
   document
     .getElementById("btn-check")
     .addEventListener("touchstart", checkUserAnswer);
+  document.getElementById("btn-back").addEventListener("touchstart", startGame);
 } else {
   document
     .getElementById("btn-check")
     .addEventListener("click", checkUserAnswer);
+  document.getElementById("btn-back").addEventListener("click", startGame);
 }
 
 function checkUserAnswer() {
