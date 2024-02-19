@@ -136,7 +136,7 @@ function blockBtnCheck() {
 // ============================== CLEAR INPUT =======================
 function clearInput() {
   var clearInput = document.getElementById("userInput");
-  if (clearInput.value != "") {
+  if (clearInput.value !== "") {
     clearInput.value = "";
     clearInput.focus();
   }
