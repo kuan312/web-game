@@ -93,7 +93,10 @@ if (isMobile()) {
 
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
-
+  if (isNaN(userInput)) {
+    alert("Введите цифру / Enter the number!");
+    return;
+  }
   if (pickedDigit == userInput) {
     correctAns++;
     setTimeout(function () {
@@ -125,8 +128,6 @@ function checkUserAnswer() {
     blockBtnCheck();
     setTimeout(startGame, 1500);
     setTimeout(clearInput, 1500);
-  } else {
-    alert("Введите цифру / Enter the number!");
   }
 }
 // ============================== TOGGLE GAME WINDOW ==============================
