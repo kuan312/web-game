@@ -92,7 +92,7 @@ function checkUserAnswer() {
     }, 1500);
     blockBtnCheck();
     setTimeout(startGame, 1500);
-    setTimeout(clearInput, 1500);
+    // setTimeout(clearInput, 1500);
   } else if (userInput >= 0) {
     wrongAns++;
     setTimeout(function () {
@@ -108,7 +108,7 @@ function checkUserAnswer() {
     }, 1500);
     blockBtnCheck();
     setTimeout(startGame, 1500);
-    setTimeout(clearInput, 1500);
+    // setTimeout(clearInput, 1500);
   } else {
     alert("Введите цифру / Enter the number!");
   }
