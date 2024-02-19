@@ -93,6 +93,7 @@ function checkUserAnswer() {
     blockBtnCheck();
     setTimeout(startGame, 1500);
     setTimeout(clearInput, 1500);
+    document.getElementById("userInput").focus();
   } else if (userInput >= 0) {
     wrongAns++;
     setTimeout(function () {
@@ -112,7 +113,6 @@ function checkUserAnswer() {
   } else {
     alert("Введите цифру / Enter the number!");
   }
-  document.getElementById("myInput").focus();
 }
 
 var btn = document.querySelector(".btn-front");
