@@ -97,6 +97,7 @@ function checkUserAnswer() {
     alert("Введите цифру / Enter the number!");
     return;
   }
+
   if (pickedDigit == userInput) {
     correctAns++;
     setTimeout(function () {
