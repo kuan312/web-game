@@ -93,42 +93,43 @@ if (isMobile()) {
 
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
+  console.log(userInput);
   if (isNaN(userInput)) {
     alert("Введите цифру / Enter the number!");
     return;
-  }
-
-  if (pickedDigit == userInput) {
-    correctAns++;
-    setTimeout(function () {
-      var outputRightAnswer = document.getElementById("output");
-      outputRightAnswer.innerHTML = showRightAns;
-    });
-    document.getElementById("ans-correct").textContent = correctAns;
-    outputBorder.classList.remove("wrong-ans");
-    outputBorder.classList.add("correct-ans");
-    setTimeout(function () {
-      outputBorder.classList.remove("correct-ans");
-    }, 1500);
-    blockBtnCheck();
-    setTimeout(startGame, 1500);
-    setTimeout(clearInput, 1500);
-  } else if (userInput >= 0) {
-    wrongAns++;
-    setTimeout(function () {
-      var outputRightAnswer = document.getElementById("output");
-      outputRightAnswer.innerHTML = showRightAns;
-      // console.log(showRightAns);
-    });
-    document.getElementById("ans-wrong").textContent = wrongAns;
-    outputBorder.classList.remove("correct-ans");
-    outputBorder.classList.add("wrong-ans");
-    setTimeout(function () {
+  } else {
+    if (pickedDigit == userInput) {
+      correctAns++;
+      setTimeout(function () {
+        var outputRightAnswer = document.getElementById("output");
+        outputRightAnswer.innerHTML = showRightAns;
+      });
+      document.getElementById("ans-correct").textContent = correctAns;
       outputBorder.classList.remove("wrong-ans");
-    }, 1500);
-    blockBtnCheck();
-    setTimeout(startGame, 1500);
-    setTimeout(clearInput, 1500);
+      outputBorder.classList.add("correct-ans");
+      setTimeout(function () {
+        outputBorder.classList.remove("correct-ans");
+      }, 1500);
+      blockBtnCheck();
+      setTimeout(startGame, 1500);
+      setTimeout(clearInput, 1500);
+    } else if (userInput >= 0) {
+      wrongAns++;
+      setTimeout(function () {
+        var outputRightAnswer = document.getElementById("output");
+        outputRightAnswer.innerHTML = showRightAns;
+        // console.log(showRightAns);
+      });
+      document.getElementById("ans-wrong").textContent = wrongAns;
+      outputBorder.classList.remove("correct-ans");
+      outputBorder.classList.add("wrong-ans");
+      setTimeout(function () {
+        outputBorder.classList.remove("wrong-ans");
+      }, 1500);
+      blockBtnCheck();
+      setTimeout(startGame, 1500);
+      setTimeout(clearInput, 1500);
+    }
   }
 }
 // ============================== TOGGLE GAME WINDOW ==============================
