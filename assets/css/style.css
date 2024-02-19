@@ -415,7 +415,7 @@ body {
 
     .game-desc {
         margin: 0rem 1.5rem;
-        line-height: 0.9rem;
+        line-height: 1.3rem;
     }
 
     .left-block {
@@ -427,8 +427,7 @@ body {
 
     .game-window {
         width: 100%;
-        margin-bottom: 7rem;
-        margin-top: 3rem;
+        margin-bottom: 4rem;
     }
 
     .game {
