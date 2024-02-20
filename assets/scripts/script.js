@@ -2,6 +2,7 @@ var pickedDigit;
 var outputBorder = document.getElementById("output");
 var showRightAns;
 
+// ========================= MAIN FUNCTION =========================
 function startGame() {
   function getRandomNum() {
     let min = 1001;
@@ -81,6 +82,7 @@ function isMobile() {
   return regex.test(navigator.userAgent);
 }
 
+// ================ TOUCHSTART FOR MOBILE TO CORRECTLY FOCUS AND SHOW KEYBOARD ================
 if (isMobile()) {
   document
     .getElementById("btn-check")
@@ -94,6 +96,7 @@ if (isMobile()) {
     .addEventListener("click", checkUserAnswer);
 }
 
+// ================ CHECK USER ANSWER FUNC ================
 function checkUserAnswer() {
   userInput = parseInt(document.getElementById("userInput").value);
   if (isNaN(userInput)) {
@@ -120,7 +123,6 @@ function checkUserAnswer() {
       setTimeout(function () {
         var outputRightAnswer = document.getElementById("output");
         outputRightAnswer.innerHTML = showRightAns;
-        // console.log(showRightAns);
       });
       document.getElementById("ans-wrong").textContent = wrongAns;
       outputBorder.classList.remove("correct-ans");
@@ -134,13 +136,14 @@ function checkUserAnswer() {
     }
   }
 }
-// ============================== TOGGLE GAME WINDOW ==============================
+// ============================== TOGGLE (show-hide) GAME WINDOW ==============================
 var btn = document.querySelector(".btn-front");
 var gameWindow = document.querySelector(".game-window");
 btn.addEventListener("click", () => {
   gameWindow.classList.toggle("is-active");
 });
 
+// ============================== ALLOW ONLY DIGITS INSIDE INPUT ==============================
 document.getElementById("userInput").addEventListener("input", function () {
   this.value = this.value.slice(0, 1);
 });
