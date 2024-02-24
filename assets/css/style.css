@@ -141,6 +141,7 @@ body {
 }
 
 .slider-card {
+    width: 90%;
     text-align: center;
     flex-direction: column;
     background-color: var(--dark-blue);
