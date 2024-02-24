@@ -1,7 +1,7 @@
 # Guess The Digit 🎲 
 ### solve the math trick and find the hidden number 🔮
 ### разгадай математический фокус и найди скрытую цифру 🔮
-## 🕹️[Play / Играть](kuanjoy-guess-the-digit.netlify.app)
+## 🕹️[Play / Играть](https://kuanjoy-guess-the-digit.netlify.app/)
 ## 🎞️ [Watch the tutorial / Смотреть инструкцию ](https://youtu.be/QpPqhf14hdo)
 
 
