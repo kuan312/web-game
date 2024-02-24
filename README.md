@@ -2,7 +2,7 @@
 ### solve the math trick and find the hidden number 🔮
 ### разгадай математический фокус и найди скрытую цифру 🔮
 ## 🕹️[Play / Играть](https://majestic-valkyrie-047d0f.netlify.app/)
-
+## 🎞️ [Video Guide / Видео Гайд ](https://youtu.be/QpPqhf14hdo)
 
 
 ![2023-11-26 16-04-21](https://github.com/kuanJoy/guess-the-digit/assets/121744592/1e6b2442-1ce0-4ecc-8803-0adc4cf320e6)
